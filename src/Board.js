@@ -163,7 +163,6 @@
 
       for(var i = 0; i < rows.length; i++){ //for each row
         if(typeof rows[i][currIndex] !== 'undefined'){//if the value at the start index is defined
-          console.log('rowIndex: ' + i, 'rows[i][currIndex]: ' + rows[i][currIndex])
           total += rows[i][currIndex];//add it to the total
           currIndex --;//decrement the start index (move left)
         }
