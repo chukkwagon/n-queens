@@ -133,7 +133,7 @@
       var currIndex = majorDiagonalColumnIndexAtFirstRow;
 
       for(var i = 0; i < rows.length; i++){
-        if(rows[i][currIndex]){
+        if(typeof rows[i][currIndex] === 'number'){
           total += rows[i][currIndex];
           currIndex++;
         }
